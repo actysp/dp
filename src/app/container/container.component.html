@@ -1,0 +1,31 @@
+<div class="app-container">
+  <div class="content">
+    <div class="grid-content">
+      <div class="list" #content
+           (window:scroll)="onScroll($event)"
+           (window:resize)="onResize($event)">
+        <div *ngFor="let item of items"
+             class="item item-trans"
+             style="display: inline-block; top: 0; left:0;"
+             [style.background]="item.color"
+             [style.width]="item.width"
+             [style.height]="item.height"
+             [style.transform]="item.transform">
+          <span>{{item.title}} </span>
+          <br/>
+          <span>{{item.content}}</span>
+          <span>{{item.transform}}</span>
+          <br/>
+          <!--<div style="height: 500px;">d</div>-->
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <button type="button" class="btn btn-light"
+              (click)="changeItem()">change Item</button>
+    </div>
+  </div>
+
+  <app-float-button></app-float-button>
+
+</div>

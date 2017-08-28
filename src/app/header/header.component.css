@@ -1,0 +1,22 @@
+.header {
+  border-bottom: 1px solid #eeeeee;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.inline > *{
+  position: relative;
+}
+
+.form-inline {
+  width: 100%;
+}
+
+.input-wrap {
+  width: 60%;
+}
+
+.input-wrap>input{
+  width: 100%;
+}
