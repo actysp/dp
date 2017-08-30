@@ -1,0 +1,25 @@
+.float-btn-area {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+}
+
+.btn-wrap {
+  margin: 10px;
+}
+
+.float-btn{
+  position: relative;
+  background: #fff;
+
+  width: 45px;
+  height: 45px;
+
+  border:none;
+  border-radius: 50%;
+  outline: none;
+
+  padding: 12.5px 13px;
+
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.04);
+}
